@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Railway;
+    src: url(../fonts/Raleway-Regular.woff), format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Railway;
+    src: url(../fonts/Raleway-Bold.woff), format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Railway;
+    src: url(../fonts/Raleway-SemiBold.woff), format('woff');
+    font-weight: 600;
+}
+:root {
+    --col-bg-dark:#2356F6;
+    --col-bg-light:#3768FF;
+    --gap: 30px;
+    --col-hover: #ABFC4F;
+}
+body{
+    font-family: Railway, sans-serif;
+    margin: 0;
+    background-color: var(--col-bg-dark);
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+nav ul{
+    display: flex;
+    gap: var(--gap);
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+nav a:hover{
+    background-color: var(--col-hover);
+}
+
+.nav_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    background-color: var(--col-bg-light);
+    margin-top: -60px;
+    padding-top: 100px;
+    color: white;
+}
+
+h1{
+    font-size: 75px;
+    font-weight: 600;
+}
+
